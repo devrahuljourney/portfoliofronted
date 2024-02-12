@@ -59,7 +59,7 @@ export default function About() {
                         {aboutLoading ? "Java, Html, Css, Tailwind Css, JavaScript, MongoDB, Express Js, React Js, Node Js, Github, Git" : aboutData.map((result, index) => (<p className=' flex flex-row' key={index}> {result.name}, </p>))}
                     </p>
                     <div className='flex flex-row justify-around items-center  ' >
-            <a className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]  ' href='#contact'>
+            <a target="_blank" rel="noopener noreferrer" className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]  ' href='#contact'>
             <button className='md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170]'>Let's talk </button>
           </a>
             <div className=' w-[50px] flex justify-center  items-center h-[50px] -translate-x-[30px] border-black border-2 hover:border-[#385170] hover:text-[#385170] ' >

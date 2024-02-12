@@ -13,8 +13,8 @@ export default function ProjectCard(props) {
                 <p className=' font-bold md:text-[20px] text-[18px] ' > {props.data.title} </p>
                 <p className=' font-[600] text-slate-500 ' > {props.data.description} </p>
                 <div className='  flex justify-evenly items-center gap-3 w-[100%] ' >
-                    <a href={props.data.github} className=' text-[16px] md:text-[18px] text-blue-500 underline flex justify-center items-center gap-3 w-[50%] ' > <FaGithub/> Github </a>
-                    <a href={props.data.url} className=' text-[16px] md:text-[18px] text-blue-500 underline flex justify-center items-center gap-3 w-[50%] ' > <TbView360 /> View </a>
+                    <a target="_blank" rel="noopener noreferrer" href={props.data.github} className=' text-[16px] md:text-[18px] text-blue-500 underline flex justify-center items-center gap-3 w-[50%] ' > <FaGithub/> Github </a>
+                    <a target="_blank" rel="noopener noreferrer" href={props.data.url} className=' text-[16px] md:text-[18px] text-blue-500 underline flex justify-center items-center gap-3 w-[50%] ' > <TbView360 /> View </a>
                 </div>
             </div>
             </div>

@@ -111,3 +111,18 @@ background: linear-gradient(145deg, #cacaca, #f0f0f0);
 box-shadow:  20px 20px 60px #bebebe,
              -20px -20px 60px #ffffff;
 }
+
+.card-label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #4a5568;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}

@@ -68,10 +68,10 @@ export default function Profile() {
 
       <div className=' flex flex-col md:flex-row font-bold  justify-evenly w-[100%] p-5   ' ref={scrollRef}>
         <div className=' md:w-[30%] flex flex-row md:flex-col  justify-center items-center gap-9 md:gap-1 ' >
-          <a id='linkedin' className='icon ' href='https://www.linkedin.com/in/rkvrahul/'><FaLinkedin /></a>
-          <a id='twitter' className='icon ' href='https://twitter.com/devrahuljourney'><FaTwitter /></a>
-          <a id='github' className='icon ' href='https://github.com/devrahuljourney'><FaGithub /></a>
-          <a id='whatsapp' className='icon ' href='https://wa.me/9162988797'><FaWhatsapp /></a>
+          <a target="_blank" rel="noopener noreferrer" id='linkedin' className='icon ' href='https://www.linkedin.com/in/rkvrahul/'><FaLinkedin /></a>
+          <a target="_blank" rel="noopener noreferrer" id='twitter' className='icon ' href='https://twitter.com/devrahuljourney'><FaTwitter /></a>
+          <a target="_blank" rel="noopener noreferrer" id='github' className='icon ' href='https://github.com/devrahuljourney'><FaGithub /></a>
+          <a target="_blank" rel="noopener noreferrer" id='whatsapp' className='icon ' href='https://wa.me/9162988797'><FaWhatsapp /></a>
         </div>
         <div className=' md:w-[40%] flex justify-center items-center ' >
         <div className=' profile   bg-[#9FD3C7]   rounded-tl-[50%]  rounded-tr-[50%] ' >

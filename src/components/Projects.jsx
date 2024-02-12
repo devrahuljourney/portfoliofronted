@@ -32,7 +32,7 @@ export default function Projects() {
             <div className=' grid  md:grid-cols-3 grid-cols-1 gap-8 mt-[20px] md:mt-[80px] ' >
                 {
                     loading ? ("...Loading ") : (
-                        data.map((data,index) => (
+                        data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)).map((data,index) => (
                             <ProjectCard key= {index} data={data}  />
                         ) )
                     )
