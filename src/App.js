@@ -7,6 +7,7 @@ import About from './components/About';
 import Coding from './components/Coding';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 // Define your components/pages outside of the App component
 // For example, let's say you have a Home component
@@ -21,12 +22,14 @@ function App() {
         <Coding/>
         <Projects/>
         <Contact/>
+        <Footer/>
         <Routes>
         <Route exact path="#home"  />
         <Route exact path="#about"  />
         <Route exact path="#coding"  />
         <Route exact path="#project"  />
         <Route exact path="#contact"  />
+        
 
         </Routes>
       </div>

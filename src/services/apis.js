@@ -20,3 +20,7 @@ export const coding = {
 export const project = {
     GET_PROJECTS_DETAILS_API : BASE_URL + "/getproject"
 }
+
+export const contact = {
+    CONTACT_API : BASE_URL + "/contactus"
+}
