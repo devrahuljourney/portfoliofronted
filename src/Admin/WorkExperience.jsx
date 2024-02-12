@@ -70,7 +70,7 @@ export default function WorkExperience() {
   };
 
   return (
-    <div className="container mt-4">
+    <div className="container mt-4 overflow-x-hidden ">
       <h2 className="mb-4">Add Work Experience</h2>
       <form onSubmit={handleSubmit} className="mb-5">
         <div className="row mb-3">
