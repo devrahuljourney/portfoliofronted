@@ -1,11 +1,36 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Profile from './components/Profile';
+import Navbar from './components/Navbar';
+import About from './components/About';
+import Coding from './components/Coding';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+
+// Define your components/pages outside of the App component
+// For example, let's say you have a Home component
 
 function App() {
   return (
-    <div className="App border-orange-600 bg-red-500">
-      <h1 className='  ' >THIS IS APP </h1>
-    </div>
+    <Router>
+      <div className="App h-full bg-[#DFDBD9]">
+        <Navbar />
+        <Profile/>
+        <About/>
+        <Coding/>
+        <Projects/>
+        <Contact/>
+        <Routes>
+        <Route exact path="#home"  />
+        <Route exact path="#about"  />
+        <Route exact path="#coding"  />
+        <Route exact path="#project"  />
+        <Route exact path="#contact"  />
+
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
