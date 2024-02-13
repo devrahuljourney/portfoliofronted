@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { getProfile } from '../services/operations/Profile';
 import { getSkill } from '../services/operations/Skill';
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
-
+import { BASE_URL } from '../services/apis';
+import { axiosInstance } from '../services/apiConnector';
+import about from "../assests/about.jpg"
 
 export default function About() {
     const [data, setData] = useState([]);
@@ -25,18 +27,23 @@ export default function About() {
     const [aboutData, setAboutData] = useState([]);
     const [aboutLoading, setAboutLoading] = useState(false);
 
+    const [skills, setSkills] = useState([]);
+
     useEffect(() => {
-        const fetchAboutData = async () => {
+        const fetchSkills = async () => {
             try {
-                const result = await getSkill(setAboutLoading);
-                setAboutData(result); // Corrected from setData to setAboutData
-                console.log("skill data ", result);
+                setAboutLoading(true);
+                const response = await axiosInstance.get(`${BASE_URL}/get-skill`);
+                setSkills(response?.data?.data);
             } catch (error) {
-                console.error("Error fetching skill data:", error);
+                console.error('Error fetching skills:', error);
+            
+            } finally {
+                setAboutLoading(false);
             }
         };
 
-        fetchAboutData();
+        fetchSkills();
     }, []);
 
     return (
@@ -47,7 +54,7 @@ export default function About() {
             </div>
             <div className='flex md:mt-[80px] mt-[20px] flex-col md:flex-row gap-10 w-[100%] p-5 items-center justify-evenly '>
                 <div className=' md:w-[40%]   w-[100%]  ' >
-                    <img className='shadow-inset-20-20-60 inset shadow-inset--20--20-60 rounded-[20%] md:w-[70%] w-[100%] ' src={data.aboutImage} alt="About Me" />
+                    <img className='shadow-inset-20-20-60 inset shadow-inset--20--20-60 rounded-[20%] md:w-[70%] w-[100%] ' src={ aboutLoading ? about :  data.aboutImage} alt="About Me" />
                 </div>
                 <div className=' md:text-[20px] text-[18px] md:w-[50%] w-[100%] flex flex-col justify-center md:items-start text-center md:text-start gap-5 ' >
                     <p className=' relative flex flex-row gap-2 items-start justify-center text-start '>
@@ -56,7 +63,7 @@ export default function About() {
                     </p>
                     <p className=' flex flex-row gap-3 '>
                         <span className=' text-[22px] font-bold ' >Skill: </span>
-                        {aboutLoading ? "Java, Html, Css, Tailwind Css, JavaScript, MongoDB, Express Js, React Js, Node Js, Github, Git" : aboutData.map((result, index) => (<p className=' flex flex-row' key={index}> {result.name}, </p>))}
+                        {aboutLoading ? "Java, Html, Css, Tailwind Css, JavaScript, MongoDB, Express Js, React Js, Node Js, Github, Git" : skills.map((result, index) => (<p className=' flex flex-row' key={index}> {result.name}, </p>))}
                     </p>
                     <div className='flex flex-row justify-around items-center  ' >
             <a target="_blank" rel="noopener noreferrer" className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]  ' href='#contact'>

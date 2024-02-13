@@ -9,10 +9,12 @@ import { axiosInstance } from '../services/apiConnector';
 import { toast } from 'react-toastify';
 import Message from './Message';
 import Coding from './Coding';
+import Navbar from '../components/Navbar'
+import { FaHome } from "react-icons/fa";
 export default function ManagePortfolio() {
     const { LOGOUT_API } = auth;
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [selectedComponent, setSelectedComponent] = useState(null);
+    const [selectedComponent, setSelectedComponent] = useState('User');
 
     const navigate = useNavigate();
 
@@ -48,6 +50,7 @@ export default function ManagePortfolio() {
 
     return (
         <div className="container mx-auto px-4 py-8">
+             <NavLink className=' hover:bg-gray-600 fixed bottom-5 right-5 w-[40px] ' to='/' > <FaHome style={{width:"30px" , height:"30px"}} /> </NavLink>
             <h1 className="text-3xl font-bold mb-4">Manage Portfolio</h1>
             <div className="flex flex-col gap-4">
                 {isLoggedIn ? (
@@ -67,7 +70,7 @@ export default function ManagePortfolio() {
                 )}
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 mb-[100px] ">
                 {selectedComponent === 'User' && <User />}
                 {selectedComponent === 'Skill' && <Skill />}
                 {selectedComponent === 'Project' && <Project />}

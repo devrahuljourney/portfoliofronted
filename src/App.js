@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Login from './Admin/Login';
 import Home from './components/Home';
 import ManagePortfolio from './Admin/ManagePortfolio';
+import PageNotFound from './components/PageNotFound';
 
 
 // Define your components/pages outside of the App component
@@ -26,7 +27,7 @@ function App() {
         <Route exact path ='/' element = { <Home/> } />
         <Route exact path="/admin/login" element = { <Login setUser = {setUser} /> }  />
         <Route exact path ='/admin/manage-portfolio' element = { <ManagePortfolio/> } />
-        
+        <Route exact path='*' element={<PageNotFound/>} />
 
         </Routes>
       </div>
