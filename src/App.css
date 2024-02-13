@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 
 .button-shadow {
-  box-shadow:  20px 20px  60px #BEBEBE,  -20px -20px  50px #385170;
+  box-shadow:  4px 4px 4px #595857,
+  -4px -4px 4px #ffffff;
   color:white;
   font-weight: 600;
   border:  2px solid #142D4C;
@@ -51,7 +52,8 @@
   transition: all 0.5s;
   margin: 1rem 0 2.5rem;
   color: white;
-  box-shadow:  30px 30px  60px #BEBEBE,  -10px -10px  30px #385170;
+  box-shadow:  4px 4px 4px #595857,
+             -4px -4px 4px #ffffff;
   border:  2px solid #142D4C;
   background-color: #385170;
 }
@@ -84,7 +86,7 @@
   box-shadow:  20px 20px  60px #BEBEBE,  -20px -20px  50px var(--github);
 }
 .profile{
-  box-shadow: 0 4px 4px #000 , -20px -20px 60px #9FD3C7;
+  box-shadow: 0 4px 4px #000 , -6px -6px 60px #9FD3C7;
 }
 .activeclass{
   background-color: #142D4C;
@@ -94,8 +96,10 @@
   color: white;
 }
 .card{
-  box-shadow: inset 5px 5px 40px #bebebe,
-              -20px -20px 60px #7589A3;
+
+
+  box-shadow:  14px 14px 28px #595857,
+  -14px -14px 28px #ffffff;
 }
  
 .project{
