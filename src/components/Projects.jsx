@@ -22,7 +22,7 @@ export default function Projects() {
     }, []);
   return (
     <div id='projects' className=' flex flex-col justify-center items-center w-[100%] p-5 mt-[20px]  ' >
-        <div className='flex flex-col justify-center items-center relative  '>
+        <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center relative  '>
                 <p className='z-10 md:text-[40px] text-[32px] font-bold'>Projects</p>
                 <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[60px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div>
         </div>

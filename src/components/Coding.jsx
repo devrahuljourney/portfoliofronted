@@ -21,7 +21,7 @@ export default function Coding() {
     }, []);
   return (
     <div id='coding' className=' w-[100%] p-5 flex flex-col justify-center items-center  ' >
-        <div className='flex flex-col justify-center items-center relative  '>
+        <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center relative  '>
                 <p className='z-10 md:text-[40px] text-[32px] font-bold'>Coding Profiles</p>
                 <div className='absolute md:translate-x-[120px] md:-translate-y-[10px] translate-x-[90px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div>
         </div>
@@ -29,7 +29,7 @@ export default function Coding() {
             {
                 data.map((data,index) => (
                     <div className=' ' >
-                      <Card data={data} key={index} />
+                      <Card  data={data} key={index} />
                     </div>
                 ))
             }

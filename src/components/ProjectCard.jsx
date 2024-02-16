@@ -5,7 +5,7 @@ export default function ProjectCard(props) {
   return (
     <div className=' w-[100%] ' >
         {
-            <div className=' flex flex-col w-[80%] project p-5 gap-5 bg-[#e0e0e0;] ' >
+            <div data-aos="fade-up"  className=' flex flex-col w-[80%] project p-5 gap-5 bg-[#e0e0e0;] ' >
             <div>
                 <img src={props.data.thumbnail}  alt='Thumbnail' />
             </div>

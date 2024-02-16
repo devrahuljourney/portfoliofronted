@@ -33,10 +33,10 @@ export default function Profile() {
   return (
     <div id='home' className='  flex flex-col w-[100%] justify-center items-center p-5'>
       <div className='relative flex flex-col mt-[5%] justify-center items-center gap-[10px]'>
-        <p className='absolute -top-[20%] right-[60%] font-bold text-[22px]'>Hello, I'm</p>
+        <p data-aos="fade-down"  className='absolute -top-[20%] right-[60%] font-bold text-[22px]'>Hello, I'm</p>
         <div className='flex flex-col justify-center items-center mt-[2%]'>
-          <p className='text-[30px] md:text-[48px] font-bold'>Rahul Kumar Verma</p>
-          <TypeAnimation
+          <p data-aos="fade-down"  className='text-[30px] md:text-[48px] font-bold'>Rahul Kumar Verma</p>
+          <TypeAnimation data-aos="fade-down" 
             className='text-[22px]'
             sequence={[
               'Developer',
@@ -57,10 +57,10 @@ export default function Profile() {
           />
         </div>
         <div className='mb-[10%] flex flex-row justify-center items-center md:w-[80%] w-[85%] mt-[5%]'>
-          <a className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href={data.resume} download>
+          <a data-aos="fade-down"   className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href={data.resume} download>
             <button className='md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170]'>Download CV</button>
           </a>
-          <a className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href='#contact'>
+          <a data-aos="fade-down"  className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href='#contact'>
             <button className='md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170]'>Let's talk </button>
           </a>
         </div>
@@ -68,18 +68,18 @@ export default function Profile() {
 
       <div className=' flex flex-col md:flex-row font-bold  justify-evenly w-[100%] p-5   ' ref={scrollRef}>
         <div className=' md:w-[30%] flex flex-row md:flex-col  justify-center items-center gap-9 md:gap-1 ' >
-          <a target="_blank" rel="noopener noreferrer" id='linkedin' className='icon ' href='https://www.linkedin.com/in/rkvrahul/'><FaLinkedin /></a>
-          <a target="_blank" rel="noopener noreferrer" id='twitter' className='icon ' href='https://twitter.com/devrahuljourney'><FaTwitter /></a>
-          <a target="_blank" rel="noopener noreferrer" id='github' className='icon ' href='https://github.com/devrahuljourney'><FaGithub /></a>
-          <a target="_blank" rel="noopener noreferrer" id='whatsapp' className='icon ' href='https://wa.me/9162988797'><FaWhatsapp /></a>
+          <a data-aos="fade-down"  target="_blank" rel="noopener noreferrer" id='linkedin' className='icon ' href='https://www.linkedin.com/in/rkvrahul/'><FaLinkedin /></a>
+          <a data-aos="fade-down"  target="_blank" rel="noopener noreferrer" id='twitter' className='icon ' href='https://twitter.com/devrahuljourney'><FaTwitter /></a>
+          <a data-aos="fade-down"  target="_blank" rel="noopener noreferrer" id='github' className='icon ' href='https://github.com/devrahuljourney'><FaGithub /></a>
+          <a data-aos="fade-down"  target="_blank" rel="noopener noreferrer" id='whatsapp' className='icon ' href='https://wa.me/9162988797'><FaWhatsapp /></a>
         </div>
         <div className=' md:w-[40%] flex justify-center items-center ' >
-        <div className=' profile   bg-[#9FD3C7]   rounded-tl-[50%]  rounded-tr-[50%] ' >
+        <div data-aos="fade-up"  className=' profile   bg-[#9FD3C7]   rounded-tl-[50%]  rounded-tr-[50%] ' >
           <img className=' object-cover py-[-20px] w-[100%]  ' alt='profileimage' src={ loading ? profile : data.profileImage} />
         </div>
         </div>
         <p className=' md:w-[30%] vertical-text flex flex-col justify-center items-center gap-2 ' onClick={handleScrollDown} style={{ cursor: 'pointer' }}>
-         <div className=' flex md:flex-col flex-row ' >
+         <div data-aos="fade-down"  className=' flex md:flex-col flex-row ' >
             <p>S</p>
             <p>c</p>
             <p>r</p>

@@ -6,12 +6,12 @@ export default function Contact() {
     
   return (
     <div id='contact' className=' p-5 flex flex-col justify-center items-center gap-4 w-[100%] ' >
-        <div className='flex flex-col justify-center items-center relative  '>
+        <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center relative  '>
                 <p className='z-10 md:text-[40px] text-[32px] font-bold'>Contact Me</p>
                 <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[60px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div>
         </div>
         <div className=' relative flex md:flex-row text-start flex-col  items-center mt-[20px] md:mt-[80px] ' >
-            <div className=' z-10 md:translate-y-0 translate-y-[5%] md:absolute md:left-[-52%]    w-[300px] md:w-[270px] p-4  flex flex-col bg-[#aaaaf6] ' >
+            <div data-aos="fade-down"  className=' z-10 md:translate-y-0 translate-y-[5%] md:absolute md:left-[-52%]    w-[300px] md:w-[270px] p-4  flex flex-col bg-[#aaaaf6] ' >
                 <p className=' text-white font-bold md:text-[22px] text-20px '>Contact Me</p>
                 <p className='text-white md:text-[18px] text-[16px] ' >Have something to share or a project in mind? Reach out via the contact form  and let's start a conversation!</p>
                 <div className='  flex flex-row gap-4' >
@@ -25,7 +25,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div className=' md:w-[90%] w-full ' >
+            <div data-aos="fade-up"  className=' md:w-[90%] w-full ' >
 
                <ContactForm/>
 

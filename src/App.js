@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Profile from './components/Profile';
@@ -13,12 +13,22 @@ import Home from './components/Home';
 import ManagePortfolio from './Admin/ManagePortfolio';
 import PageNotFound from './components/PageNotFound';
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 // Define your components/pages outside of the App component
 // For example, let's say you have a Home component
 
 function App() {
   const [user,setUser] = useState('false');
+  useEffect(() => {
+    AOS.init({
+      
+      duration: 1500,
+      easing: "ease-out-cubic",
+    });
+  }, []);
   return (
     <Router>
       <div className="App h-full bg-[#DFDBD9]">
