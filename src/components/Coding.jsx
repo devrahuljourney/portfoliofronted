@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getCoding } from '../services/operations/Coding';
 import Card from './Card';
+import { coding } from '../data/coding';
 
 export default function Coding() {
     const [data, setData] = useState([]);
@@ -27,11 +28,23 @@ export default function Coding() {
         </div>
         <div className=' md:w-[80%] w-[100%] md:mt-[80px] mt-[50px] gap-6 flex md:flex-row flex-col justify-evenly items-center flex-wrap '>
             {
+                loading ? (
+                    
+                 coding.map((data,index) => (
+                    <div className=' ' >
+                      <Card  data={data} key={index} />
+                    </div>
+                ))
+            
+                ) : (
+                    
                 data.map((data,index) => (
                     <div className=' ' >
                       <Card  data={data} key={index} />
                     </div>
                 ))
+            
+                )
             }
         </div>
     </div>

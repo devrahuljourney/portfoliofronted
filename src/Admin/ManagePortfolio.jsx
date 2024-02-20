@@ -63,7 +63,9 @@ export default function ManagePortfolio() {
                         <NavLink className="text-blue-500 hover:text-blue-700" onClick={() => renderComponent('WorkExperience')} to="#">Work Experience Management</NavLink>
                         <NavLink className="text-blue-500 hover:text-blue-700" onClick={() => renderComponent('message')} to="#">Message</NavLink>
 
+                        
                         <button className="text-red-500 hover:text-red-700" onClick={handleLogout}>Logout</button>
+                        {selectedComponent === 'User' && <User />}
                     </>
                 ) : (
                     <p>Please log in to access the portfolio management features.</p>
@@ -71,7 +73,7 @@ export default function ManagePortfolio() {
             </div>
 
             <div className="mt-8 mb-[100px] ">
-                {selectedComponent === 'User' && <User />}
+                
                 {selectedComponent === 'Skill' && <Skill />}
                 {selectedComponent === 'Project' && <Project />}
                 {selectedComponent === 'WorkExperience' && <WorkExperience />}
