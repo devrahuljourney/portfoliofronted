@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 export default function Footer() {
     const [active,setActive] = useState("#home")
   return (
-    <div className=' md:h-[250px] h-[300px]  text-white md:text-[20px] text-[18px]  bg-black md:mt-[80px] mt-[20px] '>
+    <div id='footer' className=' md:h-[250px] h-[300px]  text-white md:text-[20px] text-[18px]  bg-black md:mt-[80px] mt-[20px] '>
         <div className=' flex flex-col md:flex-row md:justify-between gap-7 justify-center items-center p-10 ' >
             <p>© Rahul Kumar Verma. All rights reserved.</p>
             <div className=' md:w-[60%] md:p-5 gap-3 flex flex-row justify-evenly items-center ' >

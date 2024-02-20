@@ -10,8 +10,11 @@ export default function Profile() {
   const scrollRef = useRef(null);
 
   const handleScrollDown = () => {
-    scrollRef.current.scrollIntoView({ behavior: 'smooth' });
+    const footerRef = document.getElementById('footer'); 
+    footerRef.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'nearest' });
   };
+  
+  
 
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
