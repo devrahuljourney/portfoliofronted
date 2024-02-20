@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getProject } from '../services/operations/Projects';
 import ProjectCard from './ProjectCard';
+import { projects } from '../data/projects';
 
 export default function Projects() {
 
@@ -31,7 +32,9 @@ export default function Projects() {
         <div className=' flex w-[100%] mx-auto md:ml-0 ml-[7%] justify-center items-center' >
             <div className=' grid  md:grid-cols-3 grid-cols-1 gap-8 mt-[20px] md:mt-[80px] ' >
                 {
-                    loading ? ("...Loading ") : (
+                    loading ? ( projects.map((data,index) => (
+                            <ProjectCard key= {index} data={data}  />
+                        )) ): (
                         data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)).map((data,index) => (
                             <ProjectCard key= {index} data={data}  />
                         ) )
