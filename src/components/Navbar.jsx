@@ -11,7 +11,7 @@ export default function Navbar() {
     
     return (
       <div className='flex    justify-center items-center w-[100%] ' >
-          <div className=' fixed z-40 group  bottom-0 bg-transparent backdrop-blur-3xl px-10 p-3 rounded-full flex gap-2 w-[100%] md:w-[30%] justify-between items-center ' >
+          <div className=' shadow-xl shadow-slate-500 fixed z-40 group  bottom-1 md:bottom-2 bg-transparent backdrop-blur-3xl px-10 p-3 rounded-full flex gap-2 w-[100%] md:w-[30%] justify-between items-center ' >
            <a onClick={() => setActive("#home")} className={` w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#home' && "activeclass" }  flex flex-col text-[11px] items-center justify-center`} href='#home' > <FaHome style={{width:"20px", height:"20px"}} /> Home </a>
            <a onClick={() => setActive("#about")} className={`  w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#about' && "activeclass" }  flex flex-col text-[11px] items-center justify-center`} href='#about' > <FaRegUser style={{width:"20px", height:"20px"}}  /> About </a>
            <a onClick={() => setActive("#coding")} className={`  w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#coding' && "activeclass" }  flex flex-col text-[11px] items-center justify-center`} href='#coding' > <FaCode style={{width:"20px", height:"20px"}}  /> Coding </a>

@@ -4,7 +4,7 @@ import { getSkill } from '../services/operations/Skill';
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { BASE_URL } from '../services/apis';
 import { axiosInstance } from '../services/apiConnector';
-import about from "../assests/about.jpg"
+import about from "../assests/about1.jpg"
 
 export default function About() {
     const [data, setData] = useState([]);

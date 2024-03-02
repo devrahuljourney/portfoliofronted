@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
 .App {
+  
   text-align: center;
   font-family: 'Bai Jamjuree', sans-serif;
+  /* animation: background 60s ease-in infinite; */
 }
-@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
+
+
+
+@keyframes background {
+  0% {
+    background-color: #DFDBD9;
+  }
+  50% {
+    background-color: #e4d2c9;
+    
+  }
+  100% {
+    background-color: #DFDBD9;
+  }
+}
 
 .button-shadow {
   box-shadow:  4px 4px 4px #595857,
