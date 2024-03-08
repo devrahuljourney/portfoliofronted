@@ -111,6 +111,8 @@
   width: 50px;
   height: 50px;
   color: white;
+  font-weight: bold;
+  transform: scale(1.1);
 }
 .card{
 
@@ -146,4 +148,9 @@ box-shadow:  20px 20px 60px #bebebe,
   justify-content: center;
   align-items: center;
   margin-top: 10%;
+}
+
+.nav{
+  background: rgb(136,160,190);
+  background: linear-gradient(207deg, rgba(136,160,190,0.46271008403361347) 0%, rgba(223,219,217,0.7204131652661064) 38%, rgba(223,219,217,0.6475840336134453) 62%, rgba(136,160,190,0.40388655462184875) 100%);
 }
