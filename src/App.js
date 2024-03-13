@@ -31,7 +31,7 @@ function App() {
   }, []);
   return (
     <Router>
-      <div className="App h-full bg-[#DFDBD9]">
+      <div className="App h-full bg-[#d9dcdf]">
         
         <Routes>
         <Route exact path ='/' element = { <Home/> } />

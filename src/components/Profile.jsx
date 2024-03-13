@@ -4,7 +4,9 @@ import { TypeAnimation } from 'react-type-animation';
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { FaArrowDownLong } from "react-icons/fa6";
 import { getProfile } from '../services/operations/Profile';
-import profile from "../assests/profile.png"
+//import profile from "../assests/profile.png"
+import profile from "../assests/profile4.png"
+
 
 export default function Profile() {
   const scrollRef = useRef(null);
