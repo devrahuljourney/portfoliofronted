@@ -29,12 +29,15 @@ function App() {
       easing: "ease-out-cubic",
     });
   }, []);
+  const [dark, setIsDark] = useState(true);
   return (
     <Router>
-      <div className="App h-full bg-[#d9dcdf]">
+    <div className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bg-[#d9dcdf]"}`}>
+
+
         
         <Routes>
-        <Route exact path ='/' element = { <Home/> } />
+        <Route exact path ='/' element = { <Home dark = {dark} setIsDark = {setIsDark} /> } />
         <Route exact path="/admin/login" element = { <Login setUser = {setUser} /> }  />
         <Route exact path ='/admin/manage-portfolio' element = { <ManagePortfolio/> } />
         <Route exact path='*' element={<PageNotFound/>} />

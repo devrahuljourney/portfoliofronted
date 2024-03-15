@@ -2,7 +2,7 @@ import React from 'react'
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 import ContactForm from './ContactForm';
 
-export default function Contact() {
+export default function Contact({dark}) {
     
   return (
     <div id='contact' className=' p-5 flex flex-col justify-center items-center gap-4 w-[100%] ' >
@@ -11,7 +11,7 @@ export default function Contact() {
                 <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[60px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div>
         </div>
         <div className=' relative flex md:flex-row text-start flex-col  items-center mt-[20px] md:mt-[80px] ' >
-            <div data-aos="fade-down"  className=' z-10 md:translate-y-0 translate-y-[5%] md:absolute md:left-[-52%]    w-[300px] md:w-[270px] p-4  flex flex-col bg-[#aaaaf6] ' >
+            <div data-aos="fade-down"  className={`  z-10 md:translate-y-0 translate-y-[5%] md:absolute md:left-[-52%]    w-[300px] md:w-[270px] p-4  flex flex-col ${dark ? "bg-[#333739] shadow-sm shadow-slate-200 " : "bg-[#aaaaf6]"}  `} >
                 <p className=' text-white font-bold md:text-[22px] text-20px '>Contact Me</p>
                 <p className='text-white md:text-[18px] text-[16px] ' >Have something to share or a project in mind? Reach out via the contact form  and let's start a conversation!</p>
                 <div className='  flex flex-row gap-4' >
@@ -27,7 +27,7 @@ export default function Contact() {
             </div>
             <div data-aos="fade-up"  className=' md:w-[90%] w-full ' >
 
-               <ContactForm/>
+               <ContactForm  />
 
             </div>
         </div>

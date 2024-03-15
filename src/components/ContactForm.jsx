@@ -39,7 +39,7 @@ export default function ContactForm() {
         <div>
             {
                 loading ? ("...Loading") : (
-                    <form className='md:w-[500px]  w-full mb-10 flex flex-col justify-center items-center gap-3 bg-[#151414] p-6 rounded-lg' onSubmit={submitHandler}>
+                    <form className='md:w-[500px]  w-full mb-10 flex flex-col justify-center items-center gap-3 bg-[#0F1111] p-6 rounded-lg' onSubmit={submitHandler}>
     <p className='font-bold text-white text-lg'>Send me a message</p>
     <div className=' w-full  p-10  flex flex-col md:flex-row gap-4'>
         <input className=' w-[100%] md:w-[50%] bg-transparent border-b border-white text-white placeholder-gray-400 focus:outline-none' placeholder='First Name' onChange={changeHandler} type='text' name='firstName' value={formData.firstName} />

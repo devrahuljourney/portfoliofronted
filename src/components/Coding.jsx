@@ -3,7 +3,7 @@ import { getCoding } from '../services/operations/Coding';
 import Card from './Card';
 import { coding } from '../data/coding';
 
-export default function Coding() {
+export default function Coding({dark}) {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -32,7 +32,7 @@ export default function Coding() {
                     
                  coding.map((data,index) => (
                     <div className=' ' >
-                      <Card  data={data} key={index} />
+                      <Card dark={dark}  data={data} key={index} />
                     </div>
                 ))
             
@@ -40,7 +40,7 @@ export default function Coding() {
                     
                 data.map((data,index) => (
                     <div className=' ' >
-                      <Card  data={data} key={index} />
+                      <Card dark={dark}  data={data} key={index} />
                     </div>
                 ))
             

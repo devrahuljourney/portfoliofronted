@@ -3,7 +3,7 @@ import { getProject } from '../services/operations/Projects';
 import ProjectCard from './ProjectCard';
 import { projects } from '../data/projects';
 
-export default function Projects() {
+export default function Projects({dark}) {
 
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(false);
@@ -33,10 +33,10 @@ export default function Projects() {
             <div className=' grid  md:grid-cols-3 grid-cols-1 gap-8 mt-[20px] md:mt-[80px] ' >
                 {
                     loading ? ( projects.map((data,index) => (
-                            <ProjectCard key= {index} data={data}  />
+                            <ProjectCard dark = {dark} key= {index} data={data}  />
                         )) ): (
                         data.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt)).map((data,index) => (
-                            <ProjectCard key= {index} data={data}  />
+                            <ProjectCard dark = {dark} key= {index} data={data}  />
                         ) )
                     )
                 }

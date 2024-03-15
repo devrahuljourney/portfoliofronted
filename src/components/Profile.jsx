@@ -8,7 +8,7 @@ import { getProfile } from '../services/operations/Profile';
 import profile from "../assests/profile4.png"
 
 
-export default function Profile() {
+export default function Profile({dark}) {
   const scrollRef = useRef(null);
 
   const handleScrollDown = () => {
@@ -37,7 +37,7 @@ export default function Profile() {
 
   return (
     <div id='home' className='  flex flex-col w-[100%] justify-center items-center p-5'>
-      <div className='relative flex flex-col mt-[5%] justify-center items-center gap-[10px]'>
+      <div className='relative flex flex-col md:mt-[3%] mt-[5%] justify-center items-center gap-[10px]'>
         <p data-aos="fade-down"  className='absolute -top-[20%] right-[60%] font-bold text-[22px]'>Hello, I'm</p>
         <div className='flex flex-col justify-center items-center mt-[2%]'>
           <p data-aos="fade-down"  className='text-[30px] md:text-[48px] font-bold'>Rahul Kumar Verma</p>
@@ -63,10 +63,10 @@ export default function Profile() {
         </div>
         <div className='mb-[10%] flex flex-row justify-center items-center md:w-[80%] w-[85%] mt-[5%]'>
           <a data-aos="fade-down"   className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href={data.resume} download>
-            <button className='md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170]'>Download CV</button>
+            <button className= {` ${dark ? "button-dark" : "button" } md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170] `}>Download CV</button>
           </a>
           <a data-aos="fade-down"  className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href='#contact'>
-            <button className='md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170]'>Let's talk </button>
+            <button className={` ${dark ? "button-dark" : "button" } md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170] `}>Let's talk </button>
           </a>
         </div>
       </div>
@@ -79,7 +79,7 @@ export default function Profile() {
           <a data-aos="fade-down"  target="_blank" rel="noopener noreferrer" id='whatsapp' className='icon ' href='https://wa.me/9162988797'><FaWhatsapp /></a>
         </div>
         <div className=' md:w-[40%] flex justify-center items-center ' >
-        <div data-aos="fade-up"  className=' profile   bg-[#9FD3C7]   rounded-tl-[50%]  rounded-tr-[50%] ' >
+        <div data-aos="fade-up"  className= {`    ${dark ? "profile-dark  bg-[#2A5D54]  " : "profile bg-[#9FD3C7]" }   rounded-tl-[50%]  rounded-tr-[50%] `} >
           <img className=' object-cover py-[-20px] w-[100%]  ' alt='profileimage' src={ loading ? profile : data.profileImage} />
         </div>
         </div>
