@@ -6,6 +6,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { getProfile } from '../services/operations/Profile';
 //import profile from "../assests/profile.png"
 import profile from "../assests/profile4.png"
+import resume  from "../assests/resume.pdf"
 
 
 export default function Profile({dark}) {
@@ -62,7 +63,7 @@ export default function Profile({dark}) {
           />
         </div>
         <div className='mb-[10%] flex flex-row justify-center items-center md:w-[80%] w-[85%] mt-[5%]'>
-          <a data-aos="fade-down"   className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href={data.resume} download>
+          <a data-aos="fade-down"   className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href={resume} download>
             <button className= {` ${dark ? "button-dark" : "button" } md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170] `}>Download CV</button>
           </a>
           <a data-aos="fade-down"  className='md:w-[220px] md:h-[50px] w-[170px] h-[30px]' href='#contact'>
