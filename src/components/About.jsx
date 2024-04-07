@@ -50,7 +50,7 @@ export default function About() {
         <div id='about' className='flex flex-col w-[100%] p-5 items-center justify-center'>
             <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center relative'>
                 <p className='z-10 md:text-[40px] text-[32px] font-bold'>About Me</p>
-                <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[63px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div>
+                {/* <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[63px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div> */}
             </div>
             <div className='flex md:mt-[80px] mt-[20px] flex-col md:flex-row gap-10 w-[100%] p-5 items-center justify-evenly '>
                 <div data-aos="fade-down"  className=' md:w-[40%]   w-[100%]  ' >

@@ -29,7 +29,7 @@ function App() {
       easing: "ease-out-cubic",
     });
   }, []);
-  const [dark, setIsDark] = useState(true);
+  const [dark, setIsDark] = useState(false);
   return (
     <Router>
     <div className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bg-[#d9dcdf]"}`}>

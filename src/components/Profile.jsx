@@ -6,7 +6,7 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import { getProfile } from '../services/operations/Profile';
 //import profile from "../assests/profile.png"
 import profile from "../assests/profile4.png"
-import resume  from "../assests/resume.pdf"
+import resume  from "../assests/Rahul_Kumar_FullStack_Developer.pdf"
 
 
 export default function Profile({dark}) {

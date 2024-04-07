@@ -8,7 +8,7 @@ export default function Contact({dark}) {
     <div id='contact' className=' p-5 flex flex-col justify-center items-center gap-4 w-[100%] ' >
         <div data-aos="zoom-in-right" className='flex flex-col justify-center items-center relative  '>
                 <p className='z-10 md:text-[40px] text-[32px] font-bold'>Contact Me</p>
-                <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[60px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div>
+                {/* <div className='absolute md:translate-x-[70px] md:-translate-y-[10px] translate-x-[60px] -translate-y-[10px] w-[50px] h-[40px] bg-[#DCB6AB]'></div> */}
         </div>
         <div className=' relative flex md:flex-row text-start flex-col  items-center mt-[20px] md:mt-[80px] ' >
             <div data-aos="fade-down"  className={`  z-10 md:translate-y-0 translate-y-[5%] md:absolute md:left-[-52%]    w-[300px] md:w-[270px] p-4  flex flex-col ${dark ? "bg-[#333739] shadow-sm shadow-slate-200 " : "bg-[#aaaaf6]"}  `} >
