@@ -54,7 +54,7 @@ export default function About() {
             </div>
             <div className='flex md:mt-[80px] mt-[20px] flex-col md:flex-row gap-10 w-[100%] p-5 items-center justify-evenly '>
                 <div data-aos="fade-down"  className=' md:w-[40%]   w-[100%]  ' >
-                    <img className='shadow-inset-20-20-60 inset shadow-inset--20--20-60 rounded-[20%] md:w-[70%] w-[100%] ' src={ aboutLoading ? about :  data.aboutImage} alt="About Me" />
+                    <img className='shadow-inset-20-20-60 inset shadow-inset--20--20-60 rounded-[20%] md:w-[70%] w-[100%] ' src={ aboutLoading ? about :  data?.aboutImage} alt="About Me" />
                 </div>
                 <div className=' md:text-[20px] text-[18px] md:w-[50%] w-[100%] flex flex-col justify-center md:items-start text-center md:text-start gap-5 ' >
                     <p data-aos="fade-up"  className=' relative flex flex-row gap-2 items-start justify-center text-start '>
