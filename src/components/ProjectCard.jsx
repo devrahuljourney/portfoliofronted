@@ -8,7 +8,7 @@ export default function ProjectCard(props) {
   return (
     <div className=' w-[100%] ' >
         {
-            <div data-aos="fade-up"  className= {` flex flex-col w-[80%]  p-5 gap-5 ${dark ? "bg-[#232528] project-dark " : "project bg-[#e0e0e0] " } `} >
+            <div data-aos="fade-up"  className= {` flex flex-col w-[80%]  p-5 gap-5 ${dark ? "bg-[#232528] project-dark  " : "project bg-[#e0e0e0] " } `} >
             <div>
                 <img src={props.data.thumbnail}  alt='Thumbnail' />
             </div>

@@ -32,7 +32,8 @@ function App() {
   const [dark, setIsDark] = useState(false);
   return (
     <Router>
-    <div className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bg-[#d9dcdf]"}`}>
+    {/* className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bg-[#d9dcdf]"}`} */}
+    <div className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bac_pat_light"}`}>
 
 
         
